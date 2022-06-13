@@ -7,7 +7,7 @@ library("rpart")
 library("rpart.plot")
 
 
-setwd( "D:\\gdrive\\ITBA2022A\\" )  #establezco la carpeta donde voy a trabajar
+setwd( "C:/desarrollo/labo" )  #establezco la carpeta donde voy a trabajar
 
 #cargo el dataset
 dtrain  <- fread( "./datasets/paquete_premium_202011.csv")
@@ -19,7 +19,7 @@ setorder( dtrain, clase_ternaria )
 dapply  <- fread( "./datasets/paquete_premium_202101.csv")
 
 #uso esta semilla para los canaritos
-set.seed(10219)
+set.seed(101)
 
 campos_originales  <- copy( colnames( dtrain ) )
 
