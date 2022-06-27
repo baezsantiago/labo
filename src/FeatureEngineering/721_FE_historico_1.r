@@ -290,22 +290,24 @@ cols_lagueables  <- copy( setdiff( colnames(dataset), kcampos_fijos ) )
 #Lags de orden 1, el TRUE indica que tambien se calcula el delta1
 # el delta1 es el valor actual de la variable MENOS el valor de esa variable el mes antr
 #delta_lag1
-Lags( cols_lagueables, 1, TRUE )   #calculo los lags de orden  i
+Lags( cols_lagueables, 1, TRUE )   #calculo los lags de orden  1
 
-#Aqui se podrian descomentar
 Lags( cols_lagueables, 2, TRUE )   #calculo los lags de orden  2
 
-#Aqui se podrian descomentar
-Lags( cols_lagueables, 3, TRUE )   #calculo los lags de orden  2
+Lags( cols_lagueables, 3, TRUE )   #calculo los lags de orden  3
 
+Lags( cols_lagueables, 6, TRUE )   #calculo los lags de orden  6
 
 #calculo la media movil, ventana de 6 meses  para las columnas  cols_laguables
 #por ahora, voy por el camino lento ... muerte a R y Python ...
 
-dataset[  , paste0( cols_lagueables, "_mean6") :=  frollmean( .SD, n= 6L, align='right', na.rm= TRUE ), 
+dataset[  , paste0( cols_lagueables, "_mean3") :=  frollmean( .SD, n= 3L, align='right', na.rm= TRUE ), 
           by= numero_de_cliente,
           .SDcols= cols_lagueables ]
 
+dataset[  , paste0( cols_lagueables, "_mean6") :=  frollmean( .SD, n= 6L, align='right', na.rm= TRUE ), 
+          by= numero_de_cliente,
+          .SDcols= cols_lagueables ]
 
 
 #--------------------------------------
