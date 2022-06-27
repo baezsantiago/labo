@@ -301,8 +301,8 @@ Lags( cols_lagueables, 3, TRUE )   #calculo los lags de orden  2
 
 #calculo la media movil, ventana de 6 meses  para las columnas  cols_laguables
 #por ahora, voy por el camino lento ... muerte a R y Python ...
-#esta cambiado a 3 meses (SB)
-dataset[  , paste0( cols_lagueables, "_mean3") :=  frollmean( .SD, n= 3L, align='right', na.rm= TRUE ), 
+
+dataset[  , paste0( cols_lagueables, "_mean6") :=  frollmean( .SD, n= 6L, align='right', na.rm= TRUE ), 
           by= numero_de_cliente,
           .SDcols= cols_lagueables ]
 
