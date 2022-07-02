@@ -14,10 +14,10 @@ experiment:
   tags: [ "semillerio" ]
   description: "semillerio"
 
-  requires:   [ "8115HTa" ]
+  requires:   [ "8101HTa" ]
 
 param:
-  semilla_primos:  102191 #poner aqui una semilla propia, sirve para crear los numeros primos que seran semillas
+  semilla_primos:  800011 #poner aqui una semilla propia, sirve para crear los numeros primos que seran semillas
 
   semillerio: 100     #nuevo parámetro, cantidad de semillas que se le cambia al lightgbm y se ensamblan, DEBERIA ser 50
                       #cuanto mas grande, mejor ganancia; pero demora mucho mas en correr
