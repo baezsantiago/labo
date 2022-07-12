@@ -1,0 +1,10 @@
+distance	action	experiment	type	key	value
+2	HT	8120HTa	file	BOlog	~/buckets/b1/exp/8120HTa/BO_log.txt
+3	TS	8120TSa	file	train_strategy	~/buckets/b1/exp/8120TSa/TS_train_strategy.csv.gz
+3	TS	8120TSa	file	train_final	~/buckets/b1/exp/8120TSa/TS_train_final.csv.gz
+3	TS	8120TSa	file	future_data	~/buckets/b1/exp/8120TSa/TS_future_data.csv.gz
+4	FE	8120FEa	file	dataset	~/buckets/b1/exp/8120FEa/paquete_premium_ext.csv.gz
+5	DT	DT0001	file	dataset	~/buckets/b1/exp/DT0001/paquete_premium.csv.gz
+1	FM	8120ZZa	file	tb_modelos	~/buckets/b1/exp/8120ZZa/tb_modelos.txt
+1	SC	8120ZZa	file	predicciones	~/buckets/b1/exp/8120ZZa/tb_predicciones.txt
+1	KA	8120ZZa	file	kaggle_submits	~/buckets/b1/exp/8120ZZa/tb_submits.txt

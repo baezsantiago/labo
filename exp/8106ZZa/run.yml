@@ -1,0 +1,20 @@
+run_uuid: 5dc1a67e3e024df5bf21c51a105ca805
+experiment_id: '1'
+user_id: astbaez
+status: RUNNING
+start_time: 1.6571182e+09
+artifact_uri: mlflow-artifacts:/1/5dc1a67e3e024df5bf21c51a105ca805/artifacts
+lifecycle_stage: active
+run_id: 5dc1a67e3e024df5bf21c51a105ca805
+end_time: .na
+metrics: .na
+params: .na
+tags:
+- key:
+  - mlflow.user
+  - mlflow.source.name
+  - mlflow.source.type
+  value:
+  - astbaez
+  - /home/astbaez/labo/src/lib/exp_run_init.r
+  - LOCAL
