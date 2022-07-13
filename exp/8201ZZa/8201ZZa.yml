@@ -1,3 +1,4 @@
+# sb
 #Aqui se hace Semillerio
 #Toma como entrada un comun  HT  = Hyperparameter Tuning
 # en la seccion param: ,  semillerio:  indica cuantas semillas se mezclan
@@ -16,8 +17,8 @@ experiment:
   restart: TRUE
   name: "exp"
   type: "ZZ"
-  tags: [ "austero" ]
-  requires:   [ "8120HTa" ]
+  tags: [ "austero" , "sb"]
+  requires:   [ "8201HTa" ]
 
 param:
   semilla_primos:  800011 #poner aqui una semilla propia, sirve para crear los numeros primos que seran semillas
