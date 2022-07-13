@@ -3,9 +3,9 @@
 # lag1, delta1, tendencia6, promedio6
 
 googlecloud:
-  RAM:   128
+  RAM:   256
   vCPU:    8
-  disk:  256
+  disk:  300
 
 
 experiment:
@@ -27,8 +27,14 @@ param:
   
   variablesmanuales: TRUE   # SE AGREGAN VARIABLES MANUALES
 
-  acumulavars: TRUE   #a lo nuevo lo va aplicando
-
+  acumulavars: FALSE   #a lo nuevo lo va aplicando
+  
+  randomforest:
+    correr:         TRUE
+    num.trees:        50
+    max.depth:        6
+    min.nodes.size:  500
+    mtry:             13
 
   #lags y sus deltas
   lags: 
@@ -47,12 +53,12 @@ param:
     promedio:  [  TRUE, TRUE,  TRUE, FALSE ]   #promedio de la ventana
     ratioavg:  [ FALSE, FALSE, FALSE, FALSE ]   #valor sobre el promedio de la ventana
     ratiomax:  [ FALSE, FALSE, FALSE, FALSE ]   #valor sobre el maximo de la ventana
-    canaritos: [   0.0,   0.0,   0.0,   0.0 ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
+    canaritos: [   0.2,   0.2,   0.0,   0.0 ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
-  tony:  TRUE
+  tony:  FALSE
 
-  rankeador: TRUE
+  rankeador: FALSE
 
   canaritos_final: 0.1   #si es CERO entonces no hace el filtrado final por canaritos
 
