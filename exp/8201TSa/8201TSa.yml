@@ -1,3 +1,4 @@
+#sb
 googlecloud:
   RAM:   256
   vCPU:    8
@@ -9,12 +10,12 @@ experiment:
   restart: FALSE
   name: "exp"
   type: "TrainingStrategy"
-  tags: [ "austero" ]
-  requires: [ "8120FEa" ]
+  tags: [ "austero", "sb" ]
+  requires: [ "8201FEa" ]
 
 
 param:
-  semilla: 102191
+  semilla: 800011
 
   #donde aplico el modelo final, los datos sin clase
   future:
@@ -32,11 +33,11 @@ param:
       desde:  202001
       hasta:  202009
     excluir: [ 202006 ]
-    undersampling: [ ]  #ATENCION  sin undersampling
+    undersampling: [ {clase: "CONTINUA", prob: 0.1 } ]  #ATENCION  sin undersampling
 
   #donde valido
   validate:
-    periodos: [ 202011 ]
+    periodos: [ 202010 ]
     rango:
       desde:  
       hasta:  
