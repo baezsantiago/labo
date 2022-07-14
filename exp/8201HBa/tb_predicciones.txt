@@ -1,0 +1,2 @@
+archivo	iteracion_bayesiana	ganancia
+futuro_prediccion_hibridacion.csv	-1	-1
