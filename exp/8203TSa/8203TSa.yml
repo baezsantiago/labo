@@ -14,7 +14,7 @@ experiment:
 
 
 param:
-  semilla: 102191
+  semilla: 800011
 
   #donde aplico el modelo final, los datos sin clase
   future:
@@ -32,11 +32,11 @@ param:
       desde:  202001
       hasta:  202009
     excluir: [ 202006 ]
-    undersampling: [ ]  #ATENCION  sin undersampling
+    undersampling: [ {clase: "CONTINUA", prob: 0.1 } ]  #ATENCION  con undersampling
 
   #donde valido
   validate:
-    periodos: [ 202011 ]
+    periodos: [ 202010 ]
     rango:
       desde:  
       hasta:  
