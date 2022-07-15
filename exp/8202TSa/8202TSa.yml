@@ -11,7 +11,7 @@ experiment:
   name: "exp"
   type: "TrainingStrategy"
   tags: [ "austero", "sb" ]
-  requires: [ "8201FEa" ]
+  requires: [ "8202FEa" ]
 
 
 param:
