@@ -31,16 +31,16 @@ param:
   
   randomforest:
     correr:         TRUE
-    num.trees:        100
-    max.depth:        12
-    min.nodes.size:  200
+    num.trees:        75
+    max.depth:        8
+    min.nodes.size:  100
     mtry:             13
 
   #lags y sus deltas
   lags: 
-    correr:    [  TRUE,  TRUE, TRUE, FALSE, FALSE, FALSE ]  #si se corre el lag
+    correr:    [  TRUE,  TRUE, FALSE, FALSE, FALSE, FALSE ]  #si se corre el lag
     lag:       [     1,      2,     3,     4,     5,     6 ]  #orden del lag
-    delta:     [  TRUE,  TRUE, TRUE, FALSE, FALSE, FALSE ]  #solo se activa si correr=TRUE 
+    delta:     [  TRUE,  TRUE, FALSE, FALSE, FALSE, FALSE ]  #solo se activa si correr=TRUE 
     canaritos: [   0.0,    0.0,   0.0,   0.1,   0.1,   0.1 ]  #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
@@ -56,7 +56,7 @@ param:
     canaritos: [   0.05,   0.05,   0.05,   0.05 ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
-  tony:  TRUE
+  tony:  FALSE
 
   rankeador: TRUE
 
