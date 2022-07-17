@@ -31,9 +31,9 @@ param:
   
   randomforest:
     correr:         TRUE
-    num.trees:        75
-    max.depth:        8
-    min.nodes.size:  100
+    num.trees:       75
+    max.depth:        6
+    min.nodes.size:  500
     mtry:             13
 
   #lags y sus deltas
@@ -41,7 +41,7 @@ param:
     correr:    [  TRUE,  TRUE, FALSE, FALSE, FALSE, FALSE ]  #si se corre el lag
     lag:       [     1,      2,     3,     4,     5,     6 ]  #orden del lag
     delta:     [  TRUE,  TRUE, FALSE, FALSE, FALSE, FALSE ]  #solo se activa si correr=TRUE 
-    canaritos: [   0.0,    0.0,   0.0,   0.1,   0.1,   0.1 ]  #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
+    canaritos: [   0.1,    0.2,   0.0,   0.1,   0.1,   0.1 ]  #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
   tendenciaYmuchomas:  #todos 
@@ -53,14 +53,14 @@ param:
     promedio:  [  TRUE, TRUE,  TRUE, TRUE ]   #promedio de la ventana
     ratioavg:  [ FALSE, FALSE, FALSE, FALSE ]   #valor sobre el promedio de la ventana
     ratiomax:  [ FALSE, FALSE, FALSE, FALSE ]   #valor sobre el maximo de la ventana
-    canaritos: [   0.05,   0.05,   0.05,   0.05 ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
+    canaritos: [   0.15,   0.0,   0.15,   0.15 ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
   tony:  FALSE
 
   rankeador: TRUE
 
-  canaritos_final: 0.1   #si es CERO entonces no hace el filtrado final por canaritos
+  canaritos_final: 0.2   #si es CERO entonces no hace el filtrado final por canaritos
 
   files:
     input:
