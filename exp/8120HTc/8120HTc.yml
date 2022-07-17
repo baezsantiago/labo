@@ -31,7 +31,7 @@ param:
  #los parametros que son un solo valor  NO van a la B.O. y se pasan fijos
   lightgbm:
 
-    learning_rate:      [ 0.02, 0.1]
+    learning_rate:      [ 0.01, 0.1]
     feature_fraction:   [ 0.2, 1.0 ]
     num_leaves:         [ 16, 1024, "integer" ]
     min_data_in_leaf:   [  0, 5000, "integer" ]
