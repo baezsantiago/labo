@@ -18,7 +18,7 @@ experiment:
   name: "exp"
   type: "ZZ"
   tags: [ "austero" , "sb"]
-  requires:   [ "8204HTe" ]
+  requires:   [ "8203HTe" ]
 
 param:
   semilla_primos:  800077 #poner aqui una semilla propia, sirve para crear los numeros primos que seran semillas
