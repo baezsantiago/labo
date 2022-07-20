@@ -13,7 +13,7 @@ experiment:
   type: "hybridisation"
   tags: [ "hybrid" ]
   description: "Hibridacion de Semillerios"
-  requires:   [ "8120ZZb", "8205ZZa", "8202ZZa", "8202ZZc" ]  
+  requires:   [ "8120ZZb", "8205ZZa", "8202ZZa", "8202ZZcc" ]  
 
 param:
   KA_start:  9000
