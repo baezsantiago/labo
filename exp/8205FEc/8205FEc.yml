@@ -48,7 +48,7 @@ param:
     correr:    [  TRUE, TRUE, TRUE, TRUE ]   #tendencias a correr, es lo que controla y se impone al resto
     ventana:   [     6,     3,    9,     12 ]   #tamaño de la ventana, solo se corren las que dicen  correr=TRUE
     tendencia: [  TRUE,  TRUE,  TRUE,  TRUE ]   #pendiente de la recta ajustada por cuadrados minimos
-    minimo:    [ FALSE,  TRUE, FALSE, FALSE ]   #minimo de la ventana
+    minimo:    [ FALSE,  FALSE, FALSE, FALSE ]   #minimo de la ventana
     maximo:    [ FALSE, FALSE, FALSE, FALSE ]   #maximo de la ventana
     promedio:  [  TRUE, TRUE,  TRUE, TRUE ]   #promedio de la ventana
     ratioavg:  [ FALSE, FALSE, FALSE, FALSE ]   #valor sobre el promedio de la ventana
